@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/kms.dir/main.cpp.o CMakeFiles/kms.dir/pkg/Molecule/Molecule.cpp.o CMakeFiles/kms.dir/pkg/Crystal/Crystal.cpp.o  -o kms 

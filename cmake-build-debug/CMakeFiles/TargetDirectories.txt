@@ -1,0 +1,3 @@
+/home/wuthrust/CLionProjects/kms/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/wuthrust/CLionProjects/kms/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/wuthrust/CLionProjects/kms/cmake-build-debug/CMakeFiles/kms.dir
