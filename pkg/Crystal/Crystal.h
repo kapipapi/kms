@@ -17,6 +17,15 @@ public:
 
     double randomKineticEnergy() const;
 
+    Eigen::Vector3d generatePosition(int i0, int i1, int i2) const;
+
+    Eigen::Vector3d generateMomentum() const;
+
+    static int randomSign();
+
+    std::vector<Molecule *> getMolecules();
+
+private:
     int n;
     double a;
     double T0;
@@ -24,7 +33,6 @@ public:
     Eigen::Vector3d b0;
     Eigen::Vector3d b1;
     Eigen::Vector3d b2;
-
     std::vector<Molecule *> molecules;
 };
 

@@ -10,7 +10,7 @@ int main() {
     Crystal c(n, a, T0, m);
     c.generateMolecules();
 
-    for (auto molecule : c.molecules) {
+    for (auto molecule : c.getMolecules()) {
         auto r = molecule->getPosition();
         auto p = molecule->getMomentum();
 //        printf("%f %f %f\n", r.x(), r.y(), r.z());
