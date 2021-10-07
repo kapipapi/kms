@@ -15,6 +15,8 @@ class Constants {
 public:
     // Boltzmann constant [kJ * mol^-1 * K^-1]
     constexpr static const double k_b = 0.00831;
+
+    //
 };
 
 #endif //KMS_CONSTANTS_H

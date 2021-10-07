@@ -36,6 +36,12 @@ vector
 ../Config/Config.h
 /Users/kacper/CLionProjects/kms/pkg/Config/Config.h
 
+/Users/kacper/CLionProjects/kms/pkg/Molecule/Molecule.cpp
+Molecule.h
+/Users/kacper/CLionProjects/kms/pkg/Molecule/Molecule.h
+utility
+-
+
 /Users/kacper/CLionProjects/kms/pkg/Molecule/Molecule.h
 Eigen/Core
 -

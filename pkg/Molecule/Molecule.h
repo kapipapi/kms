@@ -18,10 +18,13 @@ public:
 
     void setMomentum(Eigen::Vector3d new_p);
 
+    void setForce(Eigen::Vector3d new_F);
+
 private:
     int i;
     Eigen::Vector3d r;
     Eigen::Vector3d p;
+    Eigen::Vector3d F;
 };
 
 #endif //KMS_MOLECULE_H

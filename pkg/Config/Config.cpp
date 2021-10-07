@@ -2,13 +2,15 @@
 // Created by Kacper on 07/10/2021.
 //
 
+#include <cmath>
 #include "Config.h"
 
 Config::Config() {
     printf("Generating initial config.\n");
     n = 3;
+    N = pow(n, 3);
     m = 1;
-    e = 1;
+    epsilon = 1;
     R = 0.38;
     f = 1e4;
     L = 1.2;

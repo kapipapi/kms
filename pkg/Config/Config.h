@@ -13,8 +13,9 @@ public:
     Config(std::string path);
 
     int n;
+    double N;
     double m;
-    double e;
+    double epsilon;
     double R;
     double f;
     double L;

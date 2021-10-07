@@ -29,13 +29,27 @@ public:
 
     void fixCenterOfMassMovement();
 
+    void calculatePotentialEnergyAndForces();
+
+    double calculateVanDerWaalsPotential(int i, int j);
+
+    double calculateSafeSpherePotential(int i);
+
+    void calculateForcesOnMolecules(int i);
+
+    Eigen::Vector3d calculateVanDerWaalsForce(int i, int j);
+
+    Eigen::Vector3d calculateSafeSphereForce(int i);
+
 private:
     Config *config;
     Eigen::Vector3d b0;
     Eigen::Vector3d b1;
     Eigen::Vector3d b2;
-    Eigen::Vector3d P;
     std::vector<Molecule *> molecules;
+    Eigen::Vector3d P;
+    double Pressure;
+    double V;
 };
 
 #endif //KMS_CRYSTAL_H
