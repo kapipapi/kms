@@ -10,13 +10,15 @@
 
 class Molecule {
 public:
-    Molecule(int i, Eigen::Vector3d r) : i(i), r(std::move(r)) {};
+    Molecule(int i, Eigen::Vector3d r, Eigen::Vector3d p) : i(i), r(std::move(r)), p(std::move(p)) {};
 
     Eigen::Vector3d getPosition();
+    Eigen::Vector3d getMomentum();
 
 private:
     int i;
     Eigen::Vector3d r;
+    Eigen::Vector3d p;
 };
 
 #endif //KMS_MOLECULE_H

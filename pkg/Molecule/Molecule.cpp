@@ -7,3 +7,7 @@
 Eigen::Vector3d Molecule::getPosition() {
     return this->r;
 }
+
+Eigen::Vector3d Molecule::getMomentum() {
+    return this->p;
+}

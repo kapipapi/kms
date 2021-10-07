@@ -12,7 +12,8 @@ int main() {
 
     for (auto molecule : c.molecules) {
         auto r = molecule->getPosition();
-        printf("%f %f %f\n", r.x(), r.y(), r.z());
+        auto p = molecule->getMomentum();
+//        printf("%f %f %f\n", r.x(), r.y(), r.z());
         printf("%f %f %f\n", p.x(), p.y(), p.z());
     }
 

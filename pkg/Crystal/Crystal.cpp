@@ -29,13 +29,14 @@ void Crystal::generateMolecules() {
                 double sign;
                 if ((double) random() / RAND_MAX >= 0.5) sign = 1;
                 else sign = -1;
+
                 auto p = Eigen::Vector3d{
                         sign * sqrt(2 * m * randomKineticEnergy()),
                         sign * sqrt(2 * m * randomKineticEnergy()),
                         sign * sqrt(2 * m * randomKineticEnergy())
                 };
 
-                molecules.push_back(new Molecule(i, r));
+                molecules.push_back(new Molecule(i, r, p));
             }
         }
     }

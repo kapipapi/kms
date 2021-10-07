@@ -6,25 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/home/wuthrust/CLionProjects/kms/main.cpp
+/Users/kacper/CLionProjects/kms/main.cpp
 pkg/Molecule/Molecule.h
-/home/wuthrust/CLionProjects/kms/pkg/Molecule/Molecule.h
+/Users/kacper/CLionProjects/kms/pkg/Molecule/Molecule.h
 pkg/Crystal/Crystal.h
-/home/wuthrust/CLionProjects/kms/pkg/Crystal/Crystal.h
+/Users/kacper/CLionProjects/kms/pkg/Crystal/Crystal.h
 
-/home/wuthrust/CLionProjects/kms/pkg/Crystal/Crystal.cpp
+/Users/kacper/CLionProjects/kms/pkg/Crystal/Crystal.cpp
 Crystal.h
-/home/wuthrust/CLionProjects/kms/pkg/Crystal/Crystal.h
+/Users/kacper/CLionProjects/kms/pkg/Crystal/Crystal.h
 
-/home/wuthrust/CLionProjects/kms/pkg/Crystal/Crystal.h
+/Users/kacper/CLionProjects/kms/pkg/Crystal/Crystal.h
 Eigen/Core
 -
 vector
 -
 ../Molecule/Molecule.h
-/home/wuthrust/CLionProjects/kms/pkg/Molecule/Molecule.h
+/Users/kacper/CLionProjects/kms/pkg/Molecule/Molecule.h
 
-/home/wuthrust/CLionProjects/kms/pkg/Molecule/Molecule.h
+/Users/kacper/CLionProjects/kms/pkg/Molecule/Molecule.h
 Eigen/Core
 -
 utility
