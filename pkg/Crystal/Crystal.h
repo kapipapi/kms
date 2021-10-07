@@ -8,10 +8,12 @@
 #include <Eigen/Core>
 #include <vector>
 #include "../Molecule/Molecule.h"
+#include "../Constants/Constants.h"
+#include "../Config/Config.h"
 
 class Crystal {
 public:
-    explicit Crystal(int n, double a, double T0, double m);
+    explicit Crystal(Config *config);
 
     void generateMolecules();
 
@@ -25,14 +27,14 @@ public:
 
     std::vector<Molecule *> getMolecules();
 
+    void fixCenterOfMassMovement();
+
 private:
-    int n;
-    double a;
-    double T0;
-    double m;
+    Config *config;
     Eigen::Vector3d b0;
     Eigen::Vector3d b1;
     Eigen::Vector3d b2;
+    Eigen::Vector3d P;
     std::vector<Molecule *> molecules;
 };
 

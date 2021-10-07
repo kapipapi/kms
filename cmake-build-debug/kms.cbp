@@ -85,7 +85,13 @@
 		<Unit filename="/Users/kacper/CLionProjects/kms/main.cpp">
 			<Option target="kms"/>
 		</Unit>
-		<Unit filename="/Users/kacper/CLionProjects/kms/pkg/Constans/Constans.h">
+		<Unit filename="/Users/kacper/CLionProjects/kms/pkg/Config/Config.cpp">
+			<Option target="kms"/>
+		</Unit>
+		<Unit filename="/Users/kacper/CLionProjects/kms/pkg/Config/Config.h">
+			<Option target="kms"/>
+		</Unit>
+		<Unit filename="/Users/kacper/CLionProjects/kms/pkg/Constants/Constants.h">
 			<Option target="kms"/>
 		</Unit>
 		<Unit filename="/Users/kacper/CLionProjects/kms/pkg/Crystal/Crystal.cpp">

@@ -169,6 +169,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kms.dir/build.make CMakeFiles/kms.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+pkg/Config/Config.o: pkg/Config/Config.cpp.o
+
+.PHONY : pkg/Config/Config.o
+
+# target to build an object file
+pkg/Config/Config.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kms.dir/build.make CMakeFiles/kms.dir/pkg/Config/Config.cpp.o
+.PHONY : pkg/Config/Config.cpp.o
+
+pkg/Config/Config.i: pkg/Config/Config.cpp.i
+
+.PHONY : pkg/Config/Config.i
+
+# target to preprocess a source file
+pkg/Config/Config.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kms.dir/build.make CMakeFiles/kms.dir/pkg/Config/Config.cpp.i
+.PHONY : pkg/Config/Config.cpp.i
+
+pkg/Config/Config.s: pkg/Config/Config.cpp.s
+
+.PHONY : pkg/Config/Config.s
+
+# target to generate assembly for a file
+pkg/Config/Config.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kms.dir/build.make CMakeFiles/kms.dir/pkg/Config/Config.cpp.s
+.PHONY : pkg/Config/Config.cpp.s
+
 pkg/Crystal/Crystal.o: pkg/Crystal/Crystal.cpp.o
 
 .PHONY : pkg/Crystal/Crystal.o
@@ -235,6 +262,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... pkg/Config/Config.o"
+	@echo "... pkg/Config/Config.i"
+	@echo "... pkg/Config/Config.s"
 	@echo "... pkg/Crystal/Crystal.o"
 	@echo "... pkg/Crystal/Crystal.i"
 	@echo "... pkg/Crystal/Crystal.s"

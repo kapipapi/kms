@@ -1,14 +1,12 @@
 #include "pkg/Molecule/Molecule.h"
 #include "pkg/Crystal/Crystal.h"
+#include "pkg/Config/Config.h"
 
 int main() {
-    int n = 5;
-    double a = 0.38;
-    double T0 = 1000;
-    double m = 1;
-
-    Crystal c(n, a, T0, m);
+    Config config{};
+    Crystal c(&config);
     c.generateMolecules();
+    c.fixCenterOfMassMovement();
 
     for (auto molecule : c.getMolecules()) {
         auto r = molecule->getPosition();

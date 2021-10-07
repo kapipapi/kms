@@ -11,3 +11,7 @@ Eigen::Vector3d Molecule::getPosition() {
 Eigen::Vector3d Molecule::getMomentum() {
     return this->p;
 }
+
+void Molecule::setMomentum(Eigen::Vector3d new_p) {
+    this->p = new_p;
+}

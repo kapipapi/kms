@@ -3,6 +3,8 @@
 
 CMakeFiles/kms.dir/main.cpp.o
  /Users/kacper/CLionProjects/kms/main.cpp
+ /Users/kacper/CLionProjects/kms/pkg/Config/Config.h
+ /Users/kacper/CLionProjects/kms/pkg/Constants/Constants.h
  /Users/kacper/CLionProjects/kms/pkg/Crystal/Crystal.h
  /Users/kacper/CLionProjects/kms/pkg/Molecule/Molecule.h
  /usr/local/include/eigen3/Eigen/Core
@@ -179,7 +181,12 @@ CMakeFiles/kms.dir/main.cpp.o
  /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
  /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
  /usr/local/include/eigen3/Eigen/src/plugins/ReshapedMethods.h
+CMakeFiles/kms.dir/pkg/Config/Config.cpp.o
+ /Users/kacper/CLionProjects/kms/pkg/Config/Config.cpp
+ /Users/kacper/CLionProjects/kms/pkg/Config/Config.h
 CMakeFiles/kms.dir/pkg/Crystal/Crystal.cpp.o
+ /Users/kacper/CLionProjects/kms/pkg/Config/Config.h
+ /Users/kacper/CLionProjects/kms/pkg/Constants/Constants.h
  /Users/kacper/CLionProjects/kms/pkg/Crystal/Crystal.cpp
  /Users/kacper/CLionProjects/kms/pkg/Crystal/Crystal.h
  /Users/kacper/CLionProjects/kms/pkg/Molecule/Molecule.h

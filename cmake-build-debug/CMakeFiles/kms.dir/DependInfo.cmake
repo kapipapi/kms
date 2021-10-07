@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/kacper/CLionProjects/kms/main.cpp" "/Users/kacper/CLionProjects/kms/cmake-build-debug/CMakeFiles/kms.dir/main.cpp.o"
+  "/Users/kacper/CLionProjects/kms/pkg/Config/Config.cpp" "/Users/kacper/CLionProjects/kms/cmake-build-debug/CMakeFiles/kms.dir/pkg/Config/Config.cpp.o"
   "/Users/kacper/CLionProjects/kms/pkg/Crystal/Crystal.cpp" "/Users/kacper/CLionProjects/kms/cmake-build-debug/CMakeFiles/kms.dir/pkg/Crystal/Crystal.cpp.o"
   "/Users/kacper/CLionProjects/kms/pkg/Molecule/Molecule.cpp" "/Users/kacper/CLionProjects/kms/cmake-build-debug/CMakeFiles/kms.dir/pkg/Molecule/Molecule.cpp.o"
   )
