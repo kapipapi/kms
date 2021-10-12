@@ -108,6 +108,12 @@
 		<Unit filename="/home/wuthrust/CLionProjects/kms/pkg/Molecule/Molecule.h">
 			<Option target="kms"/>
 		</Unit>
+		<Unit filename="/home/wuthrust/CLionProjects/kms/pkg/Simulator/Simulator.cpp">
+			<Option target="kms"/>
+		</Unit>
+		<Unit filename="/home/wuthrust/CLionProjects/kms/pkg/Simulator/Simulator.h">
+			<Option target="kms"/>
+		</Unit>
 		<Unit filename="/home/wuthrust/CLionProjects/kms/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

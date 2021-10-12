@@ -11,4 +11,4 @@ add_executable(kms main.cpp
     pkg/Crystal/Crystal.cpp pkg/Crystal/Crystal.h
     pkg/Constants/Constants.h
     pkg/Config/Config.cpp pkg/Config/Config.h
-)
+        pkg/Simulator/Simulator.cpp pkg/Simulator/Simulator.h)

@@ -20,13 +20,14 @@ void Crystal::generateMolecules() {
         for (int i1 = 0; i1 < n; i1++) {
             for (int i2 = 0; i2 < n; i2++) {
                 int i = i0 + i1 * n + i2 * n * n;
-                auto p = generateMomentum();
+                auto p = generateMomentum(config->m);
                 this->P += p;
                 molecules.push_back(
                         new Molecule(
                                 i,
                                 generatePosition(i0, i1, i2),
-                                p
+                                p,
+                                config->m
                         )
                 );
             }
@@ -48,11 +49,11 @@ int Crystal::randomSign() {
     else return -1;
 }
 
-Eigen::Vector3d Crystal::generateMomentum() const {
+Eigen::Vector3d Crystal::generateMomentum(double m) const {
     return Eigen::Vector3d{
-            randomSign() * sqrt(2 * config->m * randomKineticEnergy()),
-            randomSign() * sqrt(2 * config->m * randomKineticEnergy()),
-            randomSign() * sqrt(2 * config->m * randomKineticEnergy())
+            randomSign() * sqrt(2 * m * randomKineticEnergy()),
+            randomSign() * sqrt(2 * m * randomKineticEnergy()),
+            randomSign() * sqrt(2 * m * randomKineticEnergy())
     };
 }
 
@@ -140,4 +141,12 @@ Eigen::Vector3d Crystal::calculateSafeSphereForce(int i) {
     auto r_i = molecules[i]->getPosition();
     if (r_i.norm() < config->L) return Eigen::Vector3d{0, 0, 0};
     return config->f * (config->L - r_i.norm()) * (r_i / r_i.norm());
+}
+
+Config *Crystal::getConfig() {
+    return this->config;
+}
+
+double Crystal::getPotential() {
+    return this->V;
 }

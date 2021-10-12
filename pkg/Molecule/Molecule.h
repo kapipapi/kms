@@ -10,7 +10,7 @@
 
 class Molecule {
 public:
-    Molecule(int i, Eigen::Vector3d r, Eigen::Vector3d p) : i(i), r(std::move(r)), p(std::move(p)) {};
+    Molecule(int i, Eigen::Vector3d r, Eigen::Vector3d p, double m) : i(i), r(std::move(r)), p(std::move(p)), m(m) {};
 
     Eigen::Vector3d getPosition();
 
@@ -24,10 +24,17 @@ public:
 
     Eigen::Vector3d getVanDerWaalsForce();
 
+    void modifyMomentum(double tau);
+
+    void modifyPositions(double tau);
+
+    double getMass();
+
 private:
     int i;
     Eigen::Vector3d r;
     Eigen::Vector3d p;
+    double m;
     Eigen::Vector3d F;
     Eigen::Vector3d F_p;
 };

@@ -21,7 +21,7 @@ public:
 
     Eigen::Vector3d generatePosition(int i0, int i1, int i2) const;
 
-    Eigen::Vector3d generateMomentum() const;
+    Eigen::Vector3d generateMomentum(double m) const;
 
     static int randomSign();
 
@@ -40,6 +40,10 @@ public:
     Eigen::Vector3d calculateVanDerWaalsForce(int i, int j);
 
     Eigen::Vector3d calculateSafeSphereForce(int i);
+
+    Config* getConfig();
+
+    double getPotential();
 
 private:
     Config *config;

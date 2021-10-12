@@ -1,14 +1,8 @@
-#include "pkg/Molecule/Molecule.h"
-#include "pkg/Crystal/Crystal.h"
-#include "pkg/Config/Config.h"
+#include "pkg/Simulator/Simulator.h"
 
 int main() {
-    Config config{};
-    Crystal c(&config);
-
-    c.generateMolecules();
-    c.fixCenterOfMassMovement();
-    c.calculatePotentialEnergyAndForces();
+    Simulator s{};
+    s.step();
 
     return 0;
 }

@@ -29,3 +29,15 @@ void Molecule::setVanDerWaalsForce(Eigen::Vector3d new_F) {
 Eigen::Vector3d Molecule::getVanDerWaalsForce() {
     return this->F_p;
 }
+
+void Molecule::modifyMomentum(double tau) {
+    this->p += 0.5 * this->F * tau;
+}
+
+void Molecule::modifyPositions(double tau) {
+    this->r += (1 / this->m) * this->p * tau;
+}
+
+double Molecule::getMass() {
+    return this->m;
+}

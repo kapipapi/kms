@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/kms.dir/pkg/Config/Config.cpp.o"
   "CMakeFiles/kms.dir/pkg/Crystal/Crystal.cpp.o"
   "CMakeFiles/kms.dir/pkg/Molecule/Molecule.cpp.o"
+  "CMakeFiles/kms.dir/pkg/Simulator/Simulator.cpp.o"
   "kms"
   "kms.pdb"
 )

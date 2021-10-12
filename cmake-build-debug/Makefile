@@ -231,6 +231,33 @@ pkg/Molecule/Molecule.cpp.s:
 	$(MAKE) -f CMakeFiles/kms.dir/build.make CMakeFiles/kms.dir/pkg/Molecule/Molecule.cpp.s
 .PHONY : pkg/Molecule/Molecule.cpp.s
 
+pkg/Simulator/Simulator.o: pkg/Simulator/Simulator.cpp.o
+
+.PHONY : pkg/Simulator/Simulator.o
+
+# target to build an object file
+pkg/Simulator/Simulator.cpp.o:
+	$(MAKE) -f CMakeFiles/kms.dir/build.make CMakeFiles/kms.dir/pkg/Simulator/Simulator.cpp.o
+.PHONY : pkg/Simulator/Simulator.cpp.o
+
+pkg/Simulator/Simulator.i: pkg/Simulator/Simulator.cpp.i
+
+.PHONY : pkg/Simulator/Simulator.i
+
+# target to preprocess a source file
+pkg/Simulator/Simulator.cpp.i:
+	$(MAKE) -f CMakeFiles/kms.dir/build.make CMakeFiles/kms.dir/pkg/Simulator/Simulator.cpp.i
+.PHONY : pkg/Simulator/Simulator.cpp.i
+
+pkg/Simulator/Simulator.s: pkg/Simulator/Simulator.cpp.s
+
+.PHONY : pkg/Simulator/Simulator.s
+
+# target to generate assembly for a file
+pkg/Simulator/Simulator.cpp.s:
+	$(MAKE) -f CMakeFiles/kms.dir/build.make CMakeFiles/kms.dir/pkg/Simulator/Simulator.cpp.s
+.PHONY : pkg/Simulator/Simulator.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -252,6 +279,9 @@ help:
 	@echo "... pkg/Molecule/Molecule.o"
 	@echo "... pkg/Molecule/Molecule.i"
 	@echo "... pkg/Molecule/Molecule.s"
+	@echo "... pkg/Simulator/Simulator.o"
+	@echo "... pkg/Simulator/Simulator.i"
+	@echo "... pkg/Simulator/Simulator.s"
 .PHONY : help
 
 
