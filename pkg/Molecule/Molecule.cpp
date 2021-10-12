@@ -21,3 +21,11 @@ void Molecule::setMomentum(Eigen::Vector3d new_p) {
 void Molecule::setForce(Eigen::Vector3d new_F) {
     this->F = std::move(new_F);
 }
+
+void Molecule::setVanDerWaalsForce(Eigen::Vector3d new_F) {
+    this->F_p = std::move(new_F);
+}
+
+Eigen::Vector3d Molecule::getVanDerWaalsForce() {
+    return this->F_p;
+}

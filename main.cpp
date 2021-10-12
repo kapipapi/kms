@@ -10,6 +10,5 @@ int main() {
     c.fixCenterOfMassMovement();
     c.calculatePotentialEnergyAndForces();
 
-
     return 0;
 }

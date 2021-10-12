@@ -81,8 +81,10 @@ void Crystal::calculatePotentialEnergyAndForces() {
         }
         // pdf (10)
         Vs_sum += calculateSafeSpherePotential(i);
+        // pdf (14)
         calculateForcesOnMolecules(i);
     }
+    // pdf (15)
     this->V = Vp_sum + Vs_sum;
 }
 
@@ -95,6 +97,7 @@ double Crystal::calculateVanDerWaalsPotential(int i, int j) {
 }
 
 double Crystal::calculateSafeSpherePotential(int i) {
+    // pdf (10)
     double r_i_norm = molecules[i]->getPosition().norm();
     if (r_i_norm < config->L) return 0;
     return 0.5 * config->f * pow(r_i_norm - config->L, 2);
@@ -102,6 +105,7 @@ double Crystal::calculateSafeSpherePotential(int i) {
 
 void Crystal::calculateForcesOnMolecules(int i) {
     // pdf (14)
+    Eigen::Vector3d Fp_i;
     Eigen::Vector3d F_i = calculateSafeSphereForce(i);
 
     // calculate wall pressure - pdf (15)
@@ -110,13 +114,20 @@ void Crystal::calculateForcesOnMolecules(int i) {
     for (int j = 0; j < config->N; j++) {
         if (i != j) {
             // pdf (13)
-            F_i += calculateVanDerWaalsForce(i, j);
+            Fp_i = calculateVanDerWaalsForce(i, j);
+            F_i += Fp_i;
         }
     }
     molecules[i]->setForce(F_i);
+    molecules[i]->setVanDerWaalsForce(Fp_i);
 }
 
 Eigen::Vector3d Crystal::calculateVanDerWaalsForce(int i, int j) {
+    auto Fp_j = molecules[j]->getVanDerWaalsForce();
+    if (Fp_j != Eigen::Vector3d{}) {
+        return -Fp_j;
+    }
+
     auto r_i = molecules[i]->getPosition();
     auto r_j = molecules[j]->getPosition();
     double r_ij_norm = (r_i - r_j).norm();

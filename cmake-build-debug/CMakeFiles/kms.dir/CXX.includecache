@@ -6,43 +6,29 @@
 
 #IncludeRegexTransform: 
 
-/Users/kacper/CLionProjects/kms/main.cpp
-pkg/Molecule/Molecule.h
-/Users/kacper/CLionProjects/kms/pkg/Molecule/Molecule.h
-pkg/Crystal/Crystal.h
-/Users/kacper/CLionProjects/kms/pkg/Crystal/Crystal.h
-pkg/Config/Config.h
-/Users/kacper/CLionProjects/kms/pkg/Config/Config.h
-
-/Users/kacper/CLionProjects/kms/pkg/Config/Config.h
+/home/wuthrust/CLionProjects/kms/pkg/Config/Config.h
 string
 -
 
-/Users/kacper/CLionProjects/kms/pkg/Constants/Constants.h
+/home/wuthrust/CLionProjects/kms/pkg/Constants/Constants.h
 
-/Users/kacper/CLionProjects/kms/pkg/Crystal/Crystal.cpp
+/home/wuthrust/CLionProjects/kms/pkg/Crystal/Crystal.cpp
 Crystal.h
-/Users/kacper/CLionProjects/kms/pkg/Crystal/Crystal.h
+/home/wuthrust/CLionProjects/kms/pkg/Crystal/Crystal.h
 
-/Users/kacper/CLionProjects/kms/pkg/Crystal/Crystal.h
+/home/wuthrust/CLionProjects/kms/pkg/Crystal/Crystal.h
 Eigen/Core
 -
 vector
 -
 ../Molecule/Molecule.h
-/Users/kacper/CLionProjects/kms/pkg/Molecule/Molecule.h
+/home/wuthrust/CLionProjects/kms/pkg/Molecule/Molecule.h
 ../Constants/Constants.h
-/Users/kacper/CLionProjects/kms/pkg/Constants/Constants.h
+/home/wuthrust/CLionProjects/kms/pkg/Constants/Constants.h
 ../Config/Config.h
-/Users/kacper/CLionProjects/kms/pkg/Config/Config.h
+/home/wuthrust/CLionProjects/kms/pkg/Config/Config.h
 
-/Users/kacper/CLionProjects/kms/pkg/Molecule/Molecule.cpp
-Molecule.h
-/Users/kacper/CLionProjects/kms/pkg/Molecule/Molecule.h
-utility
--
-
-/Users/kacper/CLionProjects/kms/pkg/Molecule/Molecule.h
+/home/wuthrust/CLionProjects/kms/pkg/Molecule/Molecule.h
 Eigen/Core
 -
 utility
